@@ -36,7 +36,7 @@ msg -tit
 msg -ama "      ## BOT DE GESTION | VPS-MX By @Kalix1 ## \033[1;31m"
 msg -bar
 if [[ $1 = "id" || -z $(ps aux |grep -v grep |grep -w "ADMbot.sh"|grep dmS|awk '{print $2}') ]]; then
-[[ -z $2 ]] && echo -ne "\033[1;96m #Digite el Token del BOT\033[0;92m\nTOKEN: \033[0;97m" && read TOKEN || TOKEN="$2"
+[[ -z $2 ]] && echo -ne "\033[1;96m #Digite el Token del BOT\033[0;92m\nTOKEN:5261022234:AAGT4y8y9t8UAPH65AOp4Ngua1Fs0J4QBqY \033[0;97m" && read TOKEN || TOKEN="$2"
 [[ -z "$TOKEN" ]] && exit 1 #SEM TOKEN, SEM BOT
 IDIOMA="$(cat ${SCPidioma})" && [[ -z $IDIOMA ]] && IDIOMA="es" #ARGUMENTO 2 (IDIOMA)
 [[ -z $3 ]] && echo -ne "\033[1;96m #Digite un nombre para su Usuario\033[0;92m \nUSUARIO: \033[0;97m" && read USERLIB || USERLIB="$3"
